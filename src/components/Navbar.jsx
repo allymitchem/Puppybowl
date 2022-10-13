@@ -3,7 +3,8 @@ import React from "react"
 const Navbar = () => {
     return (
         <div id ="navbar">
-            <h2> I am navbar</h2>
+            <form className="nameForm"><label>Name:<input type="text"/></label></form>
+            <form className="breedForm"><label>Breed:<input type="text"/></label></form>
         </div>
     )
 
