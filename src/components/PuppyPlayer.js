@@ -1,6 +1,7 @@
 import React from 'react'
 
-const PuppyPlayer = () => {
+const PuppyPlayer = (props) => {
+    const puppy = props.puppyDetails
     return(
     <div key={`player-${puppy.id}`} className='puppy'>
                 <div>{puppy.name}</div>

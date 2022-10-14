@@ -13,6 +13,7 @@ return (
     {myPuppies.length ? myPuppies.map((puppy)=> {
         return (
             <div key={`player-${puppy.id}`} className='puppy'> 
+           
                 <div>{puppy.name}</div>
                 <div> 
                     <img className="puppyPic" src = {puppy.imageUrl}
@@ -20,7 +21,7 @@ return (
                 </div>
                 {/* <div>{puppy.breed}</div>
                 <div>{puppy.status}</div> */}
-                <button onClick={()=>SetPuppies(puppy.id)}>See Details</button>
+                <button onClick={()=>SetPuppies(puppy)}>See Details</button>
             </div>) })
         : <div>loading</div>}
    

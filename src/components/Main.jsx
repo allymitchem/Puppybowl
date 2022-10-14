@@ -5,6 +5,7 @@ import {PuppyPlayer} from "./";
 
 const Main = () => {
 const [puppyData, setPuppyData] = useState([])
+console.log(puppyData)
 const [puppyDetails, setPuppyDetails] = useState({})
 console.log(puppyDetails)
   useEffect(() => {
@@ -19,22 +20,22 @@ console.log(puppyDetails)
     getPuppyData()
   }, [])
 
-  useEffect(() => {
-async function getPuppyDetails(){
-      const response = await fetch ('https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/')
-      const result = await response.json()
-      // console.log('test')
-      const Details =  result.data.players
+//   useEffect(() => {
+// async function getPuppyDetails(){
+//       const response = await fetch ('https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/')
+//       const result = await response.json()
+//       // console.log('test')
+//       const Details =  result.data.players
       
-      setPuppyDetails(Details)
-    }
-    getPuppyDetails()
-  }, [])
+//       setPuppyDetails(Details)
+//     }
+//     getPuppyDetails()
+//   }, [])
 
   return (
     <div id="main">
     <Navbar/>
-     {puppyDetails.id ? <PuppyPlayer puppyDetails={puppyDetails}/> : <PuppyList puppyData={puppyData} setPuppyDetails={setPuppyDetails}/>}
+     {puppyDetails.id ? <PuppyPlayer puppyDetails={puppyDetails} puppyData={puppyData}/> : <PuppyList puppyData={puppyData} setPuppyDetails={setPuppyDetails}/>}
     
     
   </div>
