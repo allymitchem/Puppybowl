@@ -7,7 +7,7 @@ const PuppyDetails = props => {
             <td>{props.puppy.name}</td>
             <td>{props.puppy.breed}</td>
             <td>{props.puppy.status}</td>
-    
+            <td>{props.puppy.teamId}</td>
         </tr>
     )
 }

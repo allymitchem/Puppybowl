@@ -14,7 +14,8 @@ return (
         return (
             <div key={`player-${puppy.id}`} className='puppy'> 
            
-                <div>{puppy.name}</div>
+               <span className= "nameId"><div>{puppy.name}</div>
+                <div>{puppy.id}</div></span>
                 <div> 
                     <img className="puppyPic" src = {puppy.imageUrl}
                     alt ="puppyPic"/>

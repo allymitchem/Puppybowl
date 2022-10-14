@@ -39,18 +39,19 @@ body {
   display: flex;
   flex-grow: 2;
   justify-content: center;
+  
 }
 
-#single-contact {
+/* #single-contact {
   display: flex;
-}
+} */
 
-#contact-info {
+/* #contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;
-}
+} */
 
 table {
   border-collapse: collapse;
@@ -75,4 +76,15 @@ img {
   border-radius: 5px;
   height:400px;
 }
+.nameId {
+  display:flex;
+  justify-content: space-between;
+}
+.box {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 
+  
+
+}
