@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
-import PuppyDetails from './PuppyDeets'
+import {PuppyDetails} from './PuppyDeets'
+import {PuppyPlayer} from './PuppyPlayer'
 
 const PuppyList = (props) => {
     const myPuppies = props.puppyData
+    const SetPuppies= props.setPuppyDetails
 
 console.log(myPuppies)
 
@@ -18,7 +20,7 @@ return (
                 </div>
                 {/* <div>{puppy.breed}</div>
                 <div>{puppy.status}</div> */}
-                <button onClick= {PuppyDetails}>See Details</button>
+                <button onClick={()=>SetPuppies(puppy.id)}>See Details</button>
             </div>) })
         : <div>loading</div>}
    

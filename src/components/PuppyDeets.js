@@ -1,4 +1,5 @@
 import React from 'react'
+import {PuppyPlayer} from './PuppyPlayer'
 
 const PuppyDetails = props => {
     return (
