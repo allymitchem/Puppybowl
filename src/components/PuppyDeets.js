@@ -2,7 +2,7 @@ import React from 'react'
 
 const PuppyDetails = props => {
     return (
-        <tr onClick={() => props.selectPuppy(props.puppy.id)}>
+        <tr >
             <td>{props.puppy.name}</td>
             <td>{props.puppy.breed}</td>
             <td>{props.puppy.status}</td>
