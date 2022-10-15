@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 #navbar {
-  font-family: 'Poller One', Arial, sans-serif;
+  font-family: "Poller One", Arial, sans-serif;
   flex-grow: 1;
   max-height: 10%;
   min-height: 40px;
@@ -39,7 +39,6 @@ body {
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  
 }
 
 /* #single-contact {
@@ -73,18 +72,35 @@ tr:hover {
 }
 
 img {
-  border-radius: 5px;
-  height:400px;
+  border-radius: 15px;
+  height: 365px; 
 }
 .nameId {
-  display:flex;
+  display: flex;
+  /* flex-direction: row; */
   justify-content: space-between;
+  align-items: center;
+  margin-bottom:10px;
 }
+
 .box {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* flex-grow:1; */
+  margin: 15px;
+}
 
+.puppy {
+  /* border: 1px solid black; */
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
   
-
+}
+.buttons {
+  display: flex;
+  justify-content: center;
 }
