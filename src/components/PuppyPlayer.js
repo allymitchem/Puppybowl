@@ -3,6 +3,7 @@ import {Main}  from './'
 
 const PuppyPlayer = (props) => {
     const puppy = props.puppyDetails
+    const BackState = history.replaceState(null, '', '/')
     return(
     <div key={`player-${puppy.id}`} className='puppy'>
                 <div>{puppy.name}</div>
@@ -15,7 +16,7 @@ const PuppyPlayer = (props) => {
 
                 <div><p><b>Status:</b>{puppy.status}</p></div>
                 <div><p><b>Team ID:</b>{puppy.teamId}</p></div>
-                <button onClick={()=>Main}>Go Back</button>
+                <button onClick={()=>BackState}>Go Back</button>
                 {/* //currently working on reset state to initial state// */}
             </div>)
 }
