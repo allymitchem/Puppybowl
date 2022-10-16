@@ -48,7 +48,7 @@ const [searchPups, setSearchPups] = useState('')
   return (
     <div id="main">
         <div>
-          <Navbar/>
+          <Navbar searchPups = {searchPups} setSearchPups = {setSearchPups}/>
 
           {/* <ul>
           {puppyData.map((puppy)=>(

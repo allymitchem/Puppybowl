@@ -16,7 +16,7 @@ const Navbar = (props) => {
 
     return (
         <div id ="navbar">
-            <form className="nameForm" onSubmit= {e=>{e.preventDefault();props.setSearchPups()}}>
+            <form className="nameForm" onSubmit= {e=>{e.preventDefault() ;searchPuppies()}}>
                 {/* need to set value inside of props.setSearchPups */}
                 <label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
             /></label>
