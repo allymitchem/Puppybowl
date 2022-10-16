@@ -5,6 +5,7 @@ import Main from "./Main"
 // import PuppyList from "./PuppyList"
 
 const Navbar = (props) => {
+    // const [searchPups, setSearchPups] = useState('')
     const searchPuppies = props.setSearchPups
     // const myPuppies = props.puppyData
 // const [searchWord, setSearchWord] = useState("")
@@ -16,7 +17,8 @@ const Navbar = (props) => {
 
     return (
         <div id ="navbar">
-            <form className="nameForm" onSubmit= {e=>{e.preventDefault() ;searchPuppies()}}>
+            <form className="nameForm" onSubmit= {e=>{e.preventDefault();props.setSearchPups(e.target.value)}}>
+            
                 {/* need to set value inside of props.setSearchPups */}
                 <label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
             /></label>
