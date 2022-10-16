@@ -1,17 +1,24 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import { render } from "react-dom"
 import Main from "./Main"
 import PuppyDetails from "./PuppyDeets"
 import PuppyList from "./PuppyList"
 
 const Navbar = (props) => {
-
+    const myPuppies = props.puppyData
 // const [searchWord, setSearchWord] = useState("")
 
+// useEffect(() => {
+//     const newWord = myPuppies.filter(word => word.name.toLowerCase().includes(myPuppies.toLowerCase()))
+//     setProps(newWord)
+// }, [])
 
     return (
         <div id ="navbar">
-            <form className="nameForm"><label>Name: <input type="text" placeholder="Search..." onChange={event => {setSearchWord(event.target.element)}}/></label></form>
+            <form className="nameForm"><label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
+            /></label></form>
+
+
             {/* {PuppyList.map((element)=> {
                 return(
                     <div>{element.name}</div>
