@@ -74,6 +74,7 @@ tr:hover {
 img {
   border-radius: 15px;
   height: 365px; 
+  padding-bottom: 5px;
 }
 .nameId {
   display: flex;
@@ -81,6 +82,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom:10px;
+  font-size:20px;
 }
 
 .box {
@@ -90,6 +92,7 @@ img {
   justify-content: space-around;
   /* flex-grow:1; */
   margin: 15px;
+  
 }
 
 .puppy {
@@ -98,6 +101,9 @@ img {
   border-radius: 15px;
   padding: 10px;
   margin-bottom: 10px;
+  background-color:rgba(255, 255, 255, 0.866);
+
+  
   
 }
 .buttons {

@@ -11,7 +11,7 @@ const Navbar = (props) => {
 
     return (
         <div id ="navbar">
-            <form className="nameForm"><label>Name:<input type="text" placeholder="Search..." onChange={event => {setSearchWord(event.target.element)}}/></label></form>
+            <form className="nameForm"><label>Name: <input type="text" placeholder="Search..." onChange={event => {setSearchWord(event.target.element)}}/></label></form>
             {/* {PuppyList.map((element)=> {
                 return(
                     <div>{element.name}</div>
