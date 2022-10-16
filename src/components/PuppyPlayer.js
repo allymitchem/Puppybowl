@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Main}  from './'
 import {PuppyList} from './'
 
+// const initialState = {PuppyList}
+
 const PuppyPlayer = (props) => {
     const puppy = props.puppyDetails
-    const BackState = history.replaceState(null, '', '/')
-    // const initialState = 
-    // }
+    // const BackState = history.replaceState(null, '', '/')
+    const resetState = () => {
+       return setPuppyDetails(initialState)
+    }
+
     return(
     <div key={`player-${puppy.id}`} className='puppy'>
                 <div>{puppy.name}</div>
