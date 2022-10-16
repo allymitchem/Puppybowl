@@ -1,5 +1,5 @@
 export {default as Navbar} from './Navbar'
 export {default as PuppyList} from './PuppyList'
 export {default as Main} from './Main'
-export {default as PuppyDetails} from './PuppyDeets'
+// export {default as PuppyDetails} from './PuppyDeets'
 export {default as PuppyPlayer} from './PuppyPlayer'

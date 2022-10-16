@@ -17,12 +17,13 @@ const Navbar = (props) => {
 
     return (
         <div id ="navbar">
-            <form className="nameForm" onSubmit= {e=>{e.preventDefault();props.setSearchPups(e.target.value)}}>
+            <form className="nameForm" onSubmit= {e=>{e.preventDefault();props.setSearchPups(e.target[0].value)}}>
             
                 {/* need to set value inside of props.setSearchPups */}
                 <label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
             /></label>
             </form>
+            
 
 
             {/* {PuppyList.map((element)=> {
