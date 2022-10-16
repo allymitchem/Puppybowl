@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {PuppyDetails} from './PuppyDeets'
-import {PuppyPlayer} from './PuppyPlayer'
+// import {PuppyDetails} from './PuppyDeets'
+// import {PuppyPlayer} from './PuppyPlayer'
 
 const PuppyList = (props) => {
     const myPuppies = props.puppyData

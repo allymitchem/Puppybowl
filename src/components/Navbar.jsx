@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from "react"
-import { render } from "react-dom"
+import React, {useState} from "react"
+// import { render } from "react-dom"
 import Main from "./Main"
-import PuppyDetails from "./PuppyDeets"
-import PuppyList from "./PuppyList"
+// import PuppyDetails from "./PuppyDeets"
+// import PuppyList from "./PuppyList"
 
 const Navbar = (props) => {
-    const myPuppies = props.puppyData
+    const searchPuppies = props.setSearchPups
+    // const myPuppies = props.puppyData
 // const [searchWord, setSearchWord] = useState("")
 
 // useEffect(() => {
@@ -15,8 +16,11 @@ const Navbar = (props) => {
 
     return (
         <div id ="navbar">
-            <form className="nameForm"><label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
-            /></label></form>
+            <form className="nameForm" onSubmit= {e=>{e.preventDefault();props.setSearchPups()}}>
+                {/* need to set value inside of props.setSearchPups */}
+                <label>Name: <input type="text" placeholder="Search..." //onChange={(event) => myPuppies(event.target.element)} word={myPuppies} 
+            /></label>
+            </form>
 
 
             {/* {PuppyList.map((element)=> {

@@ -8,7 +8,7 @@ const [puppyData, setPuppyData] = useState([])
 console.log(puppyData)
 const [puppyDetails, setPuppyDetails] = useState({})
 console.log(puppyDetails)
-
+const [searchPups, setSearchPups] = useState('')
   useEffect(() => {
     async function getPuppyData(){
       const response = await fetch ('https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players')
@@ -20,6 +20,18 @@ console.log(puppyDetails)
     }
     getPuppyData()
   }, [])
+
+  function searchFilter (){
+    if (!searchPups){
+      return puppyData
+    } else {
+      return puppyData.filter((puppy)=>{
+        return puppy.name.toLowerCase() === searchPups.toLowerCase()
+      })
+    }
+
+  }
+  // need to call searchFilter in Navbar?******
 
 //   useEffect(() => {
 // async function getPuppyDetails(){
@@ -37,6 +49,7 @@ console.log(puppyDetails)
     <div id="main">
         <div>
           <Navbar/>
+
           {/* <ul>
           {puppyData.map((puppy)=>(
             <li key={puppy.id}>{puppy.name}</li>
